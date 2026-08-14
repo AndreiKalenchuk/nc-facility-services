@@ -1,0 +1,81 @@
+.services-intro {
+  max-width: 720px;
+  margin: 0 auto 46px;
+  text-align: center;
+}
+.services-intro-text {
+  color: var(--text-muted);
+  font-size: 17px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.service-list-card {
+  display: flex;
+  gap: 18px;
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 26px 24px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.service-list-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: #cfe0f5;
+}
+.slc-icon {
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background: var(--blue-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slc-icon img {
+  height: 40px;
+  width: auto;
+}
+.slc-body h3 {
+  font-size: 19px;
+  margin: 0 0 8px;
+  text-transform: none;
+  letter-spacing: 0.3px;
+}
+.slc-body p {
+  color: var(--text-muted);
+  font-size: 15px;
+  margin: 0 0 14px;
+}
+.slc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--blue);
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  font-size: 14px;
+}
+.slc-link:hover {
+  gap: 11px;
+  color: var(--blue-bright);
+}
+
+@media (max-width: 1024px) {
+  .services-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 640px) {
+  .services-list {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,92 @@
+.quote-form {
+  width: 100%;
+}
+
+.qf-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.quote-form input,
+.quote-form select,
+.quote-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d3dbe6;
+  border-radius: 5px;
+  font-family: var(--body-font);
+  font-size: 14.5px;
+  color: var(--text);
+  background: #fff;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.quote-form input::placeholder,
+.quote-form textarea::placeholder {
+  color: #96a1b3;
+}
+
+.quote-form select.placeholder,
+.quote-form input.placeholder {
+  color: #96a1b3;
+}
+
+.quote-form input:focus,
+.quote-form select:focus,
+.quote-form textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgba(42, 109, 192, 0.12);
+}
+
+.quote-form textarea {
+  resize: vertical;
+}
+
+.qf-full {
+  grid-column: 1 / -1;
+}
+
+.qf-submit {
+  width: 100%;
+  margin-top: 16px;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.qf-error {
+  color: #c0392b;
+  margin: 14px 0 0;
+  font-size: 14px;
+}
+
+.quote-success {
+  text-align: center;
+  padding: 30px 20px;
+}
+.quote-success-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--blue);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+.quote-success h3 {
+  font-size: 26px;
+}
+.quote-success p {
+  color: var(--text-muted);
+  max-width: 380px;
+  margin: 0 auto 22px;
+}
+
+@media (max-width: 560px) {
+  .qf-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,52 @@
+.page-banner {
+  background:
+    linear-gradient(100deg, rgba(11, 26, 58, 0.95) 40%, rgba(16, 36, 79, 0.78) 100%),
+    url('/assets/why-building.png');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 62px 0 56px;
+  text-align: center;
+}
+.page-banner-eyebrow {
+  font-family: var(--heading-font);
+  color: #6fa6e8;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+.page-banner-title {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.page-banner-sub {
+  color: #c7d3e8;
+  max-width: 640px;
+  margin: 0 auto 18px;
+  font-size: 17px;
+}
+.breadcrumbs {
+  font-size: 14px;
+  color: #aebbd4;
+}
+.breadcrumbs a:hover {
+  color: #fff;
+}
+.crumb-sep {
+  margin: 0 8px;
+  color: #6c7ea0;
+}
+.crumb-current {
+  color: #6fa6e8;
+}
+
+@media (max-width: 620px) {
+  .page-banner-title {
+    font-size: 32px;
+  }
+}

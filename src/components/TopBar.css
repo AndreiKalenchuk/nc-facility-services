@@ -1,0 +1,43 @@
+.topbar {
+  background: var(--navy);
+  color: #d7e0f0;
+  font-size: 13px;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+}
+
+.topbar-left {
+  display: flex;
+  gap: 26px;
+}
+
+.topbar-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #d7e0f0;
+  transition: color 0.15s ease;
+}
+.topbar-item:hover {
+  color: #fff;
+}
+
+.topbar-right {
+  color: #aebbd4;
+  font-size: 12.5px;
+}
+
+@media (max-width: 760px) {
+  .topbar-right {
+    display: none;
+  }
+  .topbar-left {
+    gap: 16px;
+    font-size: 12px;
+  }
+}

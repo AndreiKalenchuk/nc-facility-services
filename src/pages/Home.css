@@ -1,0 +1,223 @@
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  background: #0b1a3a url('/assets/hero-bg.png') center right / cover no-repeat;
+  overflow: hidden;
+}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    rgba(244, 247, 251, 0.97) 0%,
+    rgba(244, 247, 251, 0.9) 34%,
+    rgba(244, 247, 251, 0.55) 58%,
+    rgba(244, 247, 251, 0.12) 82%,
+    rgba(244, 247, 251, 0) 100%
+  );
+}
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  min-height: 460px;
+  padding-top: 52px;
+  padding-bottom: 44px;
+}
+.hero-copy {
+  max-width: 620px;
+}
+.hero-eyebrow {
+  font-family: var(--heading-font);
+  color: var(--blue);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 26px;
+  margin: 0 0 12px;
+}
+.hero-title {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  line-height: 1;
+  margin: 0 0 20px;
+}
+.hero-sub {
+  color: #33425c;
+  font-size: 17px;
+  max-width: 460px;
+  margin: 0 0 30px;
+}
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero-call {
+  gap: 8px;
+}
+
+/* ---------- Services ---------- */
+.section.services-section {
+  background: var(--gray-bg);
+  padding-top: 40px;
+  padding-bottom: 28px;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 18px;
+}
+
+/* ---------- Why Choose Us ---------- */
+.section.why {
+  background: var(--gray-bg);
+  padding-top: 28px;
+  padding-bottom: 44px;
+}
+.why-heading {
+  font-size: 34px;
+}
+.why-panel {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: stretch;
+  overflow: hidden;
+  background-color: #f4f7fb;
+  background-image:
+    linear-gradient(
+      100deg,
+      rgba(34, 64, 118, 0.62) 0%,
+      rgba(42, 78, 136, 0.5) 16%,
+      rgba(60, 96, 152, 0.3) 28%,
+      rgba(120, 150, 190, 0.12) 38%,
+      rgba(244, 247, 251, 0) 46%,
+      rgba(244, 247, 251, 0) 100%
+    ),
+    url('/assets/why-building.png');
+  background-size: cover, 58% auto;
+  background-position: center, left center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.why-list {
+  color: #fff;
+  padding: 40px 44px;
+  display: flex;
+  align-items: center;
+}
+.why-bullets {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.why-bullets li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  color: #e5ecf7;
+}
+.why-bullets li:last-child {
+  margin-bottom: 0;
+}
+.why-bullets svg {
+  color: var(--blue-bright);
+  flex-shrink: 0;
+}
+
+.why-benefits {
+  background: transparent;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+.benefit {
+  text-align: center;
+  padding: 30px 18px;
+  border-right: 1px solid rgba(16, 36, 79, 0.14);
+}
+.benefit:last-child {
+  border-right: none;
+}
+.benefit-icon {
+  height: 54px;
+  width: auto;
+  margin: 0 auto 16px;
+}
+.benefit-stat {
+  font-family: var(--heading-font);
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1;
+}
+.benefit-label {
+  font-family: var(--heading-font);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: 4px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 46px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .hero::before {
+    background: linear-gradient(
+      100deg,
+      rgba(244, 247, 251, 0.97) 0%,
+      rgba(244, 247, 251, 0.9) 55%,
+      rgba(244, 247, 251, 0.7) 100%
+    );
+  }
+  .why-panel {
+    grid-template-columns: 1fr;
+    background: none;
+  }
+  .why-list {
+    background-color: #294a84;
+    background-image:
+      linear-gradient(135deg, rgba(40, 74, 132, 0.82), rgba(52, 90, 148, 0.74)),
+      url('/assets/why-building.png');
+    background-size: cover, cover;
+    background-position: center, center;
+  }
+  .why-benefits {
+    background: #fff;
+  }
+}
+@media (max-width: 620px) {
+  .hero-title {
+    font-size: 38px;
+  }
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .why-benefits {
+    grid-template-columns: 1fr;
+  }
+  .benefit {
+    border-right: none;
+    border-bottom: 1px solid #e1e7ef;
+  }
+  .benefit:last-child {
+    border-bottom: none;
+  }
+}

@@ -1,0 +1,230 @@
+.detail-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 46px;
+  align-items: start;
+}
+.detail-heading {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.detail-intro {
+  color: var(--text-muted);
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+.detail-subheading {
+  font-size: 22px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+.detail-included {
+  columns: 2;
+  column-gap: 30px;
+}
+.detail-included li {
+  break-inside: avoid;
+}
+
+.detail-side {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  position: sticky;
+  top: 96px;
+}
+.detail-benefits-card {
+  background: var(--gray-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 26px;
+}
+.detail-benefits-card h3 {
+  font-size: 19px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.detail-benefits-card ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.detail-benefits-card li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: var(--text);
+  font-size: 15px;
+}
+.detail-benefits-card svg {
+  color: var(--blue);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.detail-cta-card {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 10px;
+  padding: 28px 26px;
+  text-align: center;
+}
+.detail-cta-card h3 {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+.detail-cta-card p {
+  color: #c7d3e8;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+.detail-cta-btn {
+  width: 100%;
+}
+
+/* Process */
+.detail-process {
+  background: var(--gray-bg);
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+.process-step {
+  background: #fff;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 30px 24px;
+  position: relative;
+}
+.process-num {
+  font-family: var(--heading-font);
+  font-size: 40px;
+  font-weight: 700;
+  color: #d6e2f4;
+  line-height: 1;
+}
+.process-step h4 {
+  font-size: 19px;
+  text-transform: uppercase;
+  margin: 10px 0 8px;
+}
+.process-step p {
+  color: var(--text-muted);
+  font-size: 14.5px;
+  margin: 0;
+}
+
+/* FAQ */
+.detail-faq-inner {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 46px;
+  align-items: start;
+}
+.detail-faq-lead {
+  color: var(--text-muted);
+}
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.faq-item {
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  padding: 4px 20px;
+  background: #fff;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--navy);
+  padding: 16px 0;
+  list-style: none;
+  position: relative;
+  padding-right: 30px;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 24px;
+  color: var(--blue);
+  font-weight: 400;
+}
+.faq-item[open] summary::after {
+  content: '\2212';
+}
+.faq-item p {
+  color: var(--text-muted);
+  margin: 0 0 16px;
+  font-size: 15px;
+}
+
+/* Related */
+.related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+.related-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+  padding: 24px 16px;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.related-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: #cfe0f5;
+}
+.related-card img {
+  height: 46px;
+  width: auto;
+}
+.related-card span {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 15px;
+  color: var(--navy);
+  letter-spacing: 0.4px;
+}
+
+@media (max-width: 900px) {
+  .detail-grid,
+  .detail-faq-inner {
+    grid-template-columns: 1fr;
+  }
+  .detail-side {
+    position: static;
+  }
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .detail-included {
+    columns: 1;
+  }
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+}
