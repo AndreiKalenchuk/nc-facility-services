@@ -1,13 +1,17 @@
 /* ---------- Intro ---------- */
-.wcu-intro-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 50px;
-  align-items: center;
+.wcu-intro-head {
+  text-align: center;
+  margin-bottom: 30px;
 }
 .wcu-heading {
   font-size: 32px;
   text-transform: uppercase;
+}
+.wcu-intro-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
 .wcu-intro-copy p {
   color: var(--text-muted);
@@ -22,6 +26,8 @@
 .wcu-intro-media img {
   width: 100%;
   border-radius: 12px;
+  background: var(--blue-light);
+  border: 1px solid #d5e3f6;
   box-shadow: var(--shadow);
 }
 

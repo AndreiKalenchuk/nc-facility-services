@@ -19,7 +19,6 @@ export default function ServiceAreas() {
         eyebrow="Service Areas"
         title="Where We Work"
         subtitle={company.serving}
-        crumbs={[{ label: 'Service Areas' }]}
       />
 
       <section className="section">

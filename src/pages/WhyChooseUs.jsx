@@ -84,43 +84,47 @@ export default function WhyChooseUs() {
         eyebrow="Why Choose Us"
         title="Why Businesses Choose NC Facility Services"
         subtitle="Specific standards, accountable service, and cleaning plans built around your facility — not a generic checklist."
-        crumbs={[{ label: 'Why Choose Us' }]}
       />
 
       {/* Value proposition */}
       <section className="section">
-        <div className="container wcu-intro-grid">
-          <div className="wcu-intro-copy">
-            <p className="section-eyebrow eyebrow-left">The Difference</p>
+        <div className="container">
+          <div className="wcu-intro-head">
+            <p className="section-eyebrow">The Difference</p>
             <h2 className="wcu-heading">A Cleaning Partner You Can Actually Rely On</h2>
-            <div className="section-divider divider-left" />
-            <p>
-              {company.name} specializes in commercial cleaning and janitorial
-              services for offices, retail spaces, apartment communities, and
-              commercial properties across Eastern Washington and North Idaho. A
-              clean facility protects the health of your team and customers,
-              extends the life of your building, and reflects the professionalism
-              of your brand.
-            </p>
-            <p>
-              We keep our promises specific: trained and vetted crews, customized
-              plans, documented quality checks, and communication you can count
-              on. That is what turns a cleaning vendor into a long-term partner.
-            </p>
-            <div className="wcu-intro-actions">
-              <a href={company.phoneHref} className="btn btn-navy">
-                Call {company.phone}
-              </a>
-              <Link to="/#request-quote" className="btn btn-outline-navy">
-                Request a Quote
-              </Link>
-            </div>
+            <div className="section-divider" />
           </div>
-          <div className="wcu-intro-media">
-            <img
-              src="/assets/why-building.png"
-              alt="Commercial building professionally maintained by NC Facility Services"
-            />
+          <div className="wcu-intro-grid">
+            <div className="wcu-intro-copy">
+              <p>
+                {company.name} specializes in commercial cleaning and janitorial
+                services for offices, retail spaces, apartment communities, and
+                commercial properties across Eastern Washington and North Idaho.
+                A clean facility protects the health of your team and customers,
+                extends the life of your building, and reflects the
+                professionalism of your brand.
+              </p>
+              <p>
+                We keep our promises specific: trained and vetted crews,
+                customized plans, documented quality checks, and communication
+                you can count on. That is what turns a cleaning vendor into a
+                long-term partner.
+              </p>
+              <div className="wcu-intro-actions">
+                <a href={company.phoneHref} className="btn btn-navy">
+                  Call {company.phone}
+                </a>
+                <Link to="/#request-quote" className="btn btn-outline-navy">
+                  Request a Quote
+                </Link>
+              </div>
+            </div>
+            <div className="wcu-intro-media">
+              <img
+                src="/assets/janitorial-cart.jpg"
+                alt="Janitorial cart stocked with cleaning equipment in an office"
+              />
+            </div>
           </div>
         </div>
       </section>

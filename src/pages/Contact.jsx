@@ -33,7 +33,6 @@ export default function Contact() {
         eyebrow="Contact"
         title="Get in Touch"
         subtitle="Questions or ready for a free quote? We'd love to hear about your facility and how we can help."
-        crumbs={[{ label: 'Contact' }]}
       />
 
       <section className="section contact-cards-section">

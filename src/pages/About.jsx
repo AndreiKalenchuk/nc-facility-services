@@ -37,7 +37,6 @@ export default function About() {
         eyebrow="About Us"
         title="Cleaner Spaces. Better Environments."
         subtitle={`${company.name} is your trusted partner for commercial cleaning across Eastern Washington and North Idaho.`}
-        crumbs={[{ label: 'About Us' }]}
       />
 
       <section className="section">

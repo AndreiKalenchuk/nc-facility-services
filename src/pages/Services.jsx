@@ -11,7 +11,6 @@ export default function Services() {
         eyebrow="Our Services"
         title="Commercial Cleaning Services"
         subtitle="From daily janitorial to specialized deep cleaning, we tailor a program to keep your facility spotless, healthy, and professional."
-        crumbs={[{ label: 'Services' }]}
       />
 
       <section className="section">

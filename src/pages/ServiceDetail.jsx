@@ -25,7 +25,6 @@ export default function ServiceDetail() {
       <PageBanner
         eyebrow="Our Services"
         title={service.title}
-        crumbs={[{ label: 'Services', to: '/services' }, { label: service.title }]}
       />
 
       <section className="section detail-top">

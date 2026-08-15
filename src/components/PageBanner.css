@@ -27,22 +27,8 @@
 .page-banner-sub {
   color: #c7d3e8;
   max-width: 640px;
-  margin: 0 auto 18px;
+  margin: 0 auto;
   font-size: 17px;
-}
-.breadcrumbs {
-  font-size: 14px;
-  color: #aebbd4;
-}
-.breadcrumbs a:hover {
-  color: #fff;
-}
-.crumb-sep {
-  margin: 0 8px;
-  color: #6c7ea0;
-}
-.crumb-current {
-  color: #6fa6e8;
 }
 
 @media (max-width: 620px) {
