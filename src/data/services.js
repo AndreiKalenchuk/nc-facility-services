@@ -6,7 +6,7 @@ export const services = [
     short:
       'Consistent, detail-focused cleaning that keeps your workspace healthy and professional.',
     intro:
-      'Keep your office spotless, healthy, and welcoming with scheduled commercial cleaning tailored to your business. From workstations and conference rooms to lobbies and break areas, we handle the details so your team can focus on work.',
+      'Keep your office spotless, healthy, and welcoming with scheduled commercial cleaning tailored to your business. From workstations and conference rooms to lobbies and break areas, we handle t[...]',
     included: [
       'Dusting of desks, surfaces, and fixtures',
       'Vacuuming carpets and mopping hard floors',
@@ -29,39 +29,6 @@ export const services = [
       {
         q: 'Do you clean after business hours?',
         a: 'Yes. We commonly clean evenings and weekends so there is zero disruption to your team.',
-      },
-    ],
-  },
-  {
-    slug: 'janitorial-services',
-    title: 'Janitorial Services',
-    icon: '/assets/icon-2.svg',
-    short:
-      'Ongoing janitorial support that keeps every area maintained day after day.',
-    intro:
-      'Reliable, recurring janitorial services that keep your facility consistently clean and well-maintained. We become an extension of your team, handling the routine upkeep that busy buildings depend on.',
-    included: [
-      'Scheduled daily, weekly, or monthly service',
-      'Floor care, dusting, and surface sanitizing',
-      'Restroom cleaning and supply restocking',
-      'Trash and recycling removal',
-      'Common-area and entryway upkeep',
-      'Supply inventory management',
-    ],
-    benefits: [
-      'One dependable partner for all upkeep',
-      'Customized checklists per facility',
-      'Trained, background-checked staff',
-      'Transparent communication and reporting',
-    ],
-    faqs: [
-      {
-        q: 'What is the difference between janitorial and deep cleaning?',
-        a: 'Janitorial covers routine, recurring maintenance. Deep cleaning is a periodic, intensive reset of a space.',
-      },
-      {
-        q: 'Can you supply the cleaning products?',
-        a: 'Absolutely. We provide professional-grade, and green options are available on request.',
       },
     ],
   },
@@ -105,7 +72,7 @@ export const services = [
     short:
       'Well-kept lobbies, hallways, and amenities that residents are proud of.',
     intro:
-      'First impressions matter for property managers. We keep apartment and multi-family common areas clean, safe, and welcoming so residents and prospective tenants always see a well-maintained community.',
+      'First impressions matter for property managers. We keep apartment and multi-family common areas clean, safe, and welcoming so residents and prospective tenants always see a well-maintained[...]',
     included: [
       'Lobbies, hallways, and stairwell cleaning',
       'Elevator and mailroom upkeep',
@@ -171,7 +138,7 @@ export const services = [
     short:
       'A top-to-bottom reset that reaches the spots routine cleaning misses.',
     intro:
-      'When your space needs more than routine maintenance, our deep cleaning delivers a thorough, top-to-bottom reset — perfect for seasonal refreshes, post-event cleanup, or preparing for an important visit.',
+      'When your space needs more than routine maintenance, our deep cleaning delivers a thorough, top-to-bottom reset — perfect for seasonal refreshes, post-event cleanup, or preparing for an [...]',
     included: [
       'Detailed dusting of vents, baseboards, and fixtures',
       'Interior window and blind cleaning',
@@ -270,7 +237,7 @@ export const services = [
     short:
       'Chemical-light, high-heat sanitizing for a deeper, healthier clean.',
     intro:
-      'Harness the power of high-temperature steam to sanitize and refresh surfaces, carpets, and upholstery — reducing bacteria and allergens with minimal chemicals for a healthier environment.',
+      'Harness the power of high-temperature steam to sanitize and refresh surfaces, carpets, and upholstery — reducing bacteria and allergens with minimal chemicals for a healthier environment[...]',
     included: [
       'Carpet and rug steam cleaning',
       'Upholstery and fabric sanitizing',
@@ -293,39 +260,6 @@ export const services = [
       {
         q: 'How long do surfaces take to dry?',
         a: 'Most areas dry within a few hours thanks to our extraction equipment.',
-      },
-    ],
-  },
-  {
-    slug: 'floor-care-maintenance',
-    title: 'Floor Care & Maintenance',
-    icon: '/assets/icon-10.svg',
-    short:
-      'Strip, wax, buff, and polish to keep every floor looking new.',
-    intro:
-      'Protect your investment with professional floor care. From stripping and waxing to buffing and polishing, we keep hard floors and carpets looking their best and lasting longer.',
-    included: [
-      'Strip, wax, and refinish hard floors',
-      'Buffing and high-speed polishing',
-      'Carpet cleaning and stain treatment',
-      'Tile and grout deep cleaning',
-      'Concrete and specialty floor care',
-      'Scheduled maintenance programs',
-    ],
-    benefits: [
-      'Longer-lasting, better-looking floors',
-      'Slip-resistant, safe surfaces',
-      'Custom maintenance schedules',
-      'Expertise across many floor types',
-    ],
-    faqs: [
-      {
-        q: 'How often should floors be stripped and waxed?',
-        a: 'Typically once or twice a year, depending on traffic, with regular buffing in between.',
-      },
-      {
-        q: 'Do you service specialty floors?',
-        a: 'Yes — we care for VCT, hardwood, concrete, tile, and more.',
       },
     ],
   },
