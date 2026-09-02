@@ -7,7 +7,7 @@ export const company = {
   website: 'www.ncfacilityservices.com',
   tagline: 'CLEANER SPACES. BETTER ENVIRONMENTS.',
   serving: 'Proudly Serving Eastern Washington',
-  location: 'Spokane, WA',
+  location: '2812 N Nelson St, Spokane, WA 99027',
   hours: [
     'Mon – Fri: 7:00 AM – 6:00 PM',
     'Sat: By Appointment',
