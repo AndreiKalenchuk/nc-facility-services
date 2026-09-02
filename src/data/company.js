@@ -17,5 +17,7 @@ export const company = {
     'Spokane Valley',
     'Liberty Lake',
     'Airway Heights',
+    'Cheney',
+    'Deer Park',
   ],
 }

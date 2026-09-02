@@ -8,6 +8,8 @@ const areaDetails = {
   'Spokane Valley': 'Reliable janitorial and floor care for the Valley\'s growing business and retail corridors.',
   'Liberty Lake': 'Office and commercial cleaning for Liberty Lake\'s business parks and professional suites.',
   'Airway Heights': 'Dependable cleaning services for west-side commercial, retail, and industrial spaces.',
+  'Cheney': 'Commercial cleaning for Cheney\'s schools, businesses, and institutional facilities.',
+  'Deer Park': 'Janitorial and commercial cleaning services for Deer Park businesses and facilities.',
 }
 
 export default function ServiceAreas() {
