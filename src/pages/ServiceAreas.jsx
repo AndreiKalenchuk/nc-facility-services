@@ -8,8 +8,6 @@ const areaDetails = {
   'Spokane Valley': 'Reliable janitorial and floor care for the Valley\'s growing business and retail corridors.',
   'Liberty Lake': 'Office and commercial cleaning for Liberty Lake\'s business parks and professional suites.',
   'Airway Heights': 'Dependable cleaning services for west-side commercial, retail, and industrial spaces.',
-  'Post Falls': 'Serving North Idaho businesses with customized cleaning and janitorial programs.',
-  "Coeur d'Alene": 'Commercial cleaning for CDA\'s offices, storefronts, and hospitality spaces.',
 }
 
 export default function ServiceAreas() {
@@ -25,12 +23,12 @@ export default function ServiceAreas() {
         <div className="container">
           <div className="areas-intro">
             <p className="section-eyebrow">Coverage</p>
-            <h2 className="section-title">Serving Eastern Washington & North Idaho</h2>
+            <h2 className="section-title">Serving Eastern Washington</h2>
             <div className="section-divider" />
             <p className="areas-intro-text">
               {company.name} proudly serves businesses across the greater Spokane
-              and Coeur d'Alene regions. If you don't see your city listed, reach
-              out anyway. We regularly service surrounding communities.
+              region. If you don't see your city listed, reach out anyway. We
+              regularly service surrounding communities.
             </p>
           </div>
 
@@ -47,7 +45,7 @@ export default function ServiceAreas() {
           </div>
 
           <p className="areas-note">
-            ...and surrounding areas throughout Eastern Washington & North Idaho.
+            ...and surrounding areas throughout Eastern Washington.
           </p>
         </div>
       </section>
