@@ -1,8 +1,8 @@
 export const company = {
   name: 'NC Facility Services LLC',
   shortName: 'NC Facility Services',
-  phone: '509-555-0198',
-  phoneHref: 'tel:+15095550198',
+  phone: '509-290-8461',
+  phoneHref: 'tel:+15092908461',
   email: 'ncfacilityserv@gmail.com',
   website: 'www.ncfacilityservices.com',
   tagline: 'CLEANER SPACES. BETTER ENVIRONMENTS.',
