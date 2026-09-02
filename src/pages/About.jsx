@@ -36,7 +36,7 @@ export default function About() {
       <PageBanner
         eyebrow="About Us"
         title="Cleaner Spaces. Better Environments."
-        subtitle={`${company.name} is your trusted partner for commercial cleaning across Eastern Washington and North Idaho.`}
+        subtitle={`${company.name} is your trusted partner for commercial cleaning across Eastern Washington.`}
       />
 
       <section className="section">
@@ -55,9 +55,8 @@ export default function About() {
             <p>
               {company.name} provides reliable commercial cleaning and janitorial
               services for offices, retail spaces, apartment communities, and
-              commercial properties throughout the Spokane and Coeur d'Alene
-              regions. We keep your business clean, healthy, and welcoming so you
-              can focus on what you do best.
+              commercial properties throughout the Spokane region. We keep your
+              business clean, healthy, and welcoming so you can focus on what you do best.
             </p>
             <p>
               We know that a clean environment is more than appearances. It

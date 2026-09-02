@@ -99,10 +99,9 @@ export default function WhyChooseUs() {
               <p>
                 {company.name} specializes in commercial cleaning and janitorial
                 services for offices, retail spaces, apartment communities, and
-                commercial properties across Eastern Washington and North Idaho.
-                A clean facility protects the health of your team and customers,
-                extends the life of your building, and reflects the
-                professionalism of your brand.
+                commercial properties across Eastern Washington. A clean facility
+                protects the health of your team and customers, extends the life
+                of your building, and reflects the professionalism of your brand.
               </p>
               <p>
                 We keep our promises specific: trained and vetted crews,

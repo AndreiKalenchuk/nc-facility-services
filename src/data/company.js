@@ -6,7 +6,7 @@ export const company = {
   email: 'ncfacilityserv@gmail.com',
   website: 'www.ncfacilityservices.com',
   tagline: 'CLEANER SPACES. BETTER ENVIRONMENTS.',
-  serving: 'Proudly Serving Eastern Washington & North Idaho',
+  serving: 'Proudly Serving Eastern Washington',
   location: 'Spokane, WA',
   hours: [
     'Mon – Fri: 7:00 AM – 6:00 PM',
@@ -17,7 +17,5 @@ export const company = {
     'Spokane Valley',
     'Liberty Lake',
     'Airway Heights',
-    'Post Falls',
-    "Coeur d'Alene",
   ],
 }
