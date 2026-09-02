@@ -4,6 +4,11 @@ const TO_EMAIL = process.env.QUOTE_TO_EMAIL || 'ncfacilityserv@gmail.com'
 const FROM_EMAIL =
   process.env.QUOTE_FROM_EMAIL || 'NC Facility Services <onboarding@resend.dev>'
 
+// Shown to site visitors when anything goes wrong on our side. Never leak
+// upstream provider errors to the browser — they expose internal config.
+const GENERIC_FAILURE =
+  "We couldn't submit your request right now. Please call us at 509-290-8461 or email ncfacilityserv@gmail.com and we'll get right back to you."
+
 const escapeHtml = (value = '') =>
   String(value)
     .replace(/&/g, '&amp;')
@@ -25,10 +30,20 @@ export async function handler(event) {
   }
 
   if (!process.env.RESEND_API_KEY) {
-    return json(500, {
-      error:
-        'Email service is not configured. Please set RESEND_API_KEY, or call us directly.',
-    })
+    console.error('[send-quote] RESEND_API_KEY is not set')
+    return json(500, { error: GENERIC_FAILURE })
+  }
+
+  // Resend's shared test sender can only deliver to the account owner's own
+  // address. Surface this in the function logs so it isn't mistaken for a bug.
+  if (FROM_EMAIL.includes('onboarding@resend.dev')) {
+    console.warn(
+      '[send-quote] Sending from the Resend test sender (onboarding@resend.dev). ' +
+        'Delivery to ' +
+        TO_EMAIL +
+        ' will fail unless it is the Resend account owner address. ' +
+        'Verify a domain at https://resend.com/domains and set QUOTE_FROM_EMAIL.'
+    )
   }
 
   let data
@@ -77,11 +92,18 @@ export async function handler(event) {
     })
 
     if (error) {
-      return json(502, { error: error.message || 'Failed to send email.' })
+      console.error('[send-quote] Resend rejected the send:', {
+        from: FROM_EMAIL,
+        to: TO_EMAIL,
+        name: error.name,
+        message: error.message,
+      })
+      return json(502, { error: GENERIC_FAILURE })
     }
     return json(200, { ok: true })
   } catch (err) {
-    return json(502, { error: err.message || 'Failed to send email.' })
+    console.error('[send-quote] Unexpected failure:', err)
+    return json(502, { error: GENERIC_FAILURE })
   }
 }
 

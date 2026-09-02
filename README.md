@@ -47,7 +47,7 @@ cp .env.example .env
 
 > Note: Resend cannot send **from** a gmail.com address. It uses
 > `onboarding@resend.dev` (test sender) by default. To send from a branded
-> address (e.g. `quotes@ncfacilityservices.com`), verify your domain in Resend
+> address (e.g. `quotes@ncfacilityserveces.com`), verify your domain in Resend
 > and update `QUOTE_FROM_EMAIL`.
 
 ## Deploying to Netlify

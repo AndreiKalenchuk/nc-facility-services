@@ -118,7 +118,7 @@ Replace every `REPLACE_ME` placeholder with your real value.
 
 ## Part 4 — Add your domain name
 
-- [ ] **4.1 Get a domain** — buy one (Namecheap, Google/Squarespace, Cloudflare, etc.) or use one you own, e.g. `REPLACE_ME_ncfacilityservices.com`.
+- [ ] **4.1 Get a domain** — buy one (Namecheap, Google/Squarespace, Cloudflare, etc.) or use one you own. This project uses `ncfacilityserveces.com`.
 
 - [ ] **4.2 Add it in Netlify** — Site → **Domain management** → **Add a domain** → enter your domain.
 
@@ -136,7 +136,7 @@ Replace every `REPLACE_ME` placeholder with your real value.
 
 - [ ] **4.6 Update the sender address** — once verified, change `QUOTE_FROM_EMAIL` in Netlify env vars to use your domain, e.g.:
   ```
-  QUOTE_FROM_EMAIL=NC Facility Services <quotes@REPLACE_ME_ncfacilityservices.com>
+  QUOTE_FROM_EMAIL=NC Facility Services <quotes@ncfacilityserveces.com>
   ```
   Then **redeploy** (Deploys → Trigger deploy).
 
@@ -149,7 +149,7 @@ Replace every `REPLACE_ME` placeholder with your real value.
 ## Quick reference
 
 - Recipient email: `ncfacilityserv@gmail.com`
-- Business phone: `509-555-0198`
+- Business phone: `509-290-8461`
 - Env vars needed on Netlify: `RESEND_API_KEY`, `QUOTE_TO_EMAIL`, `QUOTE_FROM_EMAIL`
 - Build: `npm run build` → publish `dist` → functions in `netlify/functions`
 - Never commit `.env` (already gitignored).

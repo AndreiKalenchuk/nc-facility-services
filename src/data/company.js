@@ -4,7 +4,7 @@ export const company = {
   phone: '509-290-8461',
   phoneHref: 'tel:+15092908461',
   email: 'ncfacilityserv@gmail.com',
-  website: 'www.ncfacilityservices.com',
+  website: 'www.ncfacilityserveces.com',
   tagline: 'CLEANER SPACES. BETTER ENVIRONMENTS.',
   serving: 'Proudly Serving Eastern Washington',
   location: '2812 N Nelson St, Spokane, WA 99027',
